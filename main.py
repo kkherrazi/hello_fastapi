@@ -3,7 +3,7 @@ from pydantic import BaseModel
 from typing import Optional, List
 
 api = FastAPI(
-    title="My API",
+    title="Hello Fast API",
     description="My own API powered by FastAPI.",
     version="1.0.1")
 

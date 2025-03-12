@@ -1,5 +1,6 @@
 # FastAPI
 
+FastAPI implementations
  
 
 ## Installation
@@ -21,7 +22,7 @@ Si vous rencontrez un problème, vous pouvez également utiliser la commande sui
 ```bash
 python3 -m uvicorn main:api --reload
 ```
-Cette commande s'assure de lancer le server web de (FastAPI)[https://fastapi.tiangolo.com/] à l'aide du package _uvicorn_ installé avec _pip3_.
+Cette commande s'assure de lancer le server web de [FastAPI] (https://fastapi.tiangolo.com/)s à l'aide du package _uvicorn_ installé avec _pip3_.
 L'argument _--reload_ permet de mettre à jour automatiquement l'API lorsqu'on effectue des changements du fichier source. Dans la console, on doit observer la ligne suivante:
 
 
@@ -34,19 +35,18 @@ curl -X GET http://127.0.0.1:8000/
 ## Documentation
 
 
-### le EndPoint /docs
+### OpenAPi: 
 Ouvrez le endpoint _docs_ dans le navigateur: http://localhost:8000/docs
 
-Vous devriez arriver sur cette interface OpenAPI (anciennement Swagger).
+Vous devriez arriver sur cette interface [OpenAPI](https://www.openapis.org/) (anciennement Swagger).
 
-### le EndPoint /redocs
-Ouvrez le endpoint _docs_ dans le navigateur: http://localhost:8000/docs
+### ReDoc:  
+Ouvrez le endpoint _/redocs_ dans le navigateur: http://localhost:8000/redocs
 
-Cette interface est générée par (ReDoc)[https://github.com/Redocly/redoc]. 
+Cette interface est générée par [ReDoc](https://github.com/Redocly/redoc). 
 Enfin, nous pouvons nous rendre au endpoint /openapi.json. 
 On retrouvera la déclaration de l'API utilisée par ReDoc et OpenAPI pour générer les documentations:
-
-Ouvrez l'URL http://localhost:8000/openapi.json
+ 
 
  
 
